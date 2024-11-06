@@ -81,13 +81,14 @@ header {
     color: var(--main-color);
     font-size: 1.2rem;
     text-transform: uppercase;
-    font-weight: 2000;
+    font-weight: 500;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     cursor: pointer;
 }
 
 .navbar a:hover {
     background-color: rgb(2, 13, 24);
+    border-bottom: 5px solid var(--main-color);
     border-radius: 0.9rem;
     transition: 0.5s all linear;
     color: #1b1b1b;
@@ -143,7 +144,7 @@ header {
 .home {
     width: 100%;
     min-height: 100vh;
-    background: url(img/n4.jpg); 
+    background: url(img/n4.jpg);
     background-repeat: on-repeat;
     background-size: cover;
     background-position: center;
@@ -165,13 +166,13 @@ header {
 }
 .home .home-img {
     /* width: 22rem;
-    height: 20rem; 
+    height: 20rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
     object-fit: cover;
     border-radius: 40%; */
     padding-top: 3rem;
-} 
+}
 
 .home .home-img img {
     width: 50rem;
@@ -181,7 +182,7 @@ header {
     background-color: transparent;
     background-size: cover;
     background-image: url(img/nn4.jpg);
-    
+
 
 }
 
@@ -241,7 +242,7 @@ header {
 }
 
 .about {
-    background-color: rgb(2, 13, 24); 
+    background-color: rgb(2, 13, 24);
     /* background: url(img/cc1.jpg); */
     background-size: cover;
     align-items: center;
@@ -264,7 +265,7 @@ header {
     gap: 1.2rem;
     margin-left: 10%;
     padding: 1%;
-   width: 80%;
+    width: 80%;
     height: 40rem;
     gap: 1rem;
     border-radius: 0.3rem;
@@ -272,7 +273,7 @@ header {
     align-items: center;
     align-items: center;
     text-align: center;
-   border: 3px solid rgb(22, 72, 88);
+    border: 3px solid rgb(22, 72, 88);
 
 
 }
@@ -287,7 +288,7 @@ header {
 }
 
 .about .about-container .Education:hover {
-   
+
     color: var(--text-color);
     zoom: 103%;
 
@@ -322,9 +323,8 @@ header {
     text-align: center;
     padding: 3px;
     color: rgb(255, 255, 255);
-    
     width: 100%;
-   border-radius: 0rem;
+    border-radius: 0rem;
 
 }
 
@@ -334,7 +334,7 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
-   
+
 }
 
 /* end about-container */
@@ -353,7 +353,7 @@ header {
 
 h2:hover {
     color: black;
-    
+
 }
 
 .about .skills .box {
@@ -495,16 +495,18 @@ h2:hover {
     background: url(img/n4.jpg);
     object-fit: cover;
     background-size: contain;
+
 }
 .Experience .Experience-img  {
 
-    
+
 }
 .Experience .Experience-img img {
     width: 24.2rem;
     height: 15.9rem;
     background: transparent;
     border-radius: 2rem;
+
 
 }
 
@@ -521,7 +523,7 @@ h2:hover {
     margin-left: 15%;
     height: fit-content;
     border-left: 4px solid var(--main-color);
-    
+
 
 }
 
@@ -537,7 +539,7 @@ h2:hover {
 
 .Experience .Experience-card .exp .area {
     padding: 50%;
-  
+
 }
 
 .Experience .Experience-card .exp {
@@ -549,7 +551,7 @@ h2:hover {
     background:   rgb(2, 13, 24);
     padding: 1%;
     border: 6px solid var(--main-color);
- 
+
 
 }
 .Experience .Experience-card .exp:hover{
@@ -669,7 +671,7 @@ h2:hover {
 
 /* strat portfolio */
 .porfolio .wrapper img {
-    
+
     height: 20rem;
     padding: 0px;
     object-fit: cover;
@@ -716,7 +718,7 @@ h2:hover {
 }
 .prt {
     display: none;
-    /* position: absolute; 
+    /* position: absolute;
     transform:translate(-50%);
     top: -100%; */
     /* border: 5px solid rgb(245, 230, 210);  */
@@ -727,7 +729,46 @@ h2:hover {
     padding: 2rem;
 }
 
-.porfolio .gallary {
+
+
+
+.gallary-container {
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+
+   }
+
+   .gallary-container .gallary-img img{
+    border-radius: 0rem;
+    height: 20rem;
+    border: 5px solid transparent;
+    object-fit: fill    ;
+    object-position: center   ;
+   }
+   .gallary-container .gallary-img1 img{
+     border-radius: 0;
+     border: 5px solid transparent;
+     height: 40%;
+     object-fit: fill    ;
+     object-position: left   ;
+   }
+   /* .gallary-container .gallary-img1 img:hover{
+     border: 10px solid pink;
+     background-image: url(Obendalo\ Logo.jpg);
+     transition: 10s;
+
+   } */
+   /* .gallary-container .gallary-img img:hover{
+     border: 10px solid transparent;
+     content: url(images\ \(12\).jpeg);
+     transition: 3s;
+
+   } */
+
+
+
+
+/* .porfolio .gallary {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     width: 80%;
@@ -749,7 +790,7 @@ h2:hover {
 
 .porfolio .gallary img:hover {
     zoom: 110%;
-}
+} */
 
 /* end portfolio*/
 
@@ -773,17 +814,17 @@ h2:hover {
     background-size: cover;
     width: 100%;
     height: 13rem;
-    border: 1px solid var(--main-color); 
+    border: 1px solid var(--main-color);
     border-radius: 0rem;
   }
   .box-c:hover{
     background-image: url(img/n4.jpg);
   }
- 
+
    .box-c .price .social{
     margin-left:25%;
-   
-  
+
+
   }
    .box-c p{
     background-color: var(--main-color);
@@ -832,7 +873,7 @@ h2:hover {
 .contacts {
     width: 100%;
     background: rgb(11, 28, 44);
-    
+
     background-size: cover;
 
 }
@@ -857,7 +898,7 @@ h2:hover {
 }
 
 
-   
+
 .contacts .subject {
     padding: 7px;
 }
@@ -867,11 +908,11 @@ h2:hover {
 }
 
 .contacts select {
-    border-radius: 10px;
+    border-radius: 1px;
     width: 100%;
     height: 2.5rem;
     background-color: transparent;
-    border: 5px solid var(--main-color);
+    border: 5px solid transparent;
     color: #1b1b1b;
     background-color: rgb(245, 230, 210);
 
@@ -890,7 +931,7 @@ h2:hover {
     height: 2.5rem;
     padding-left: 20px;
     border-radius: 1px;
-    border: 5px solid var(--main-color);
+    border: 5px solid transparent;
 }
 
 #placeholder {
@@ -908,7 +949,7 @@ h2:hover {
 .contacts .subject input {
     width: 100%;
     height: 12rem;
-    border: 5px solid var(--main-color);
+    border: 5px solid transparent;
     background-color: rgb(245, 230, 210);
     border-radius: 1px;
     color: rgb(100, 78, 50);
@@ -1025,7 +1066,7 @@ h2:hover {
     .header{
         padding: 9px 4%;
     }
-    .logo img { 
+    .logo img {
         padding: 50px 4%;
     }
     .home-text{
@@ -1042,7 +1083,7 @@ h2:hover {
     body {
         width: fit-content;
     }
- 
+
 }
 
 
@@ -1069,27 +1110,28 @@ h2:hover {
     .navbar a{
         color: var(--text-color);
 
-        
+
     }
     .navbar a:hover{
         color: var(--main-color);
     }
     .navbar.active{
         top: 100%;
+        margin-left: 10rem;
     }
     .header-icon {
         position: relative;
     }
     .products-container{
         background-position: relative;
-        
+
         width: fit-content;
     }
     .Education{
         margin-left: -3%;
     }
  }
- 
+
  @media (max-width: 768px){
     .about-container{
         display: grid;
@@ -1108,7 +1150,7 @@ h2:hover {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(5rem, auto));
     }
-    
+
     .heading p {
         color: #fff;
         font-size: 1rem;
@@ -1122,10 +1164,9 @@ h2:hover {
         border: 30%;
         text-align: center;
         padding: 3rem;
-    
+
     }
     .exp li{
         font-size: 10px;
     }
  }
- 
