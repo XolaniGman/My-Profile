@@ -235,6 +235,7 @@ header {
     font-size: 1.2rem;
     text-align: center;
     border: 2px solid rgb(78, 111, 145);
+    border-radius: 0.5rem;
 }
 
 .about {
@@ -269,7 +270,7 @@ header {
     align-items: center;
     text-align: center;
     border: 3px solid rgb(22, 72, 88);
-
+    border-radius: 0.5rem;
 
 }
 
@@ -278,7 +279,7 @@ header {
     background: linear-gradient(to left ,rgb(8, 68, 62) , rgb(2, 13, 24));
     height: 100%;
     overflow: hidden;
-
+    border-radius: 0.5rem;
 }
 
 .about .about-container .Education:hover {
@@ -361,6 +362,9 @@ h2:hover {
     width: 100%;
     border-radius: 0.5rem;
 
+}
+.about .skills .box span a{
+    text-align: left ;
 }
 
 .about .skills .box .st1 {
@@ -451,17 +455,54 @@ h2:hover {
     padding: 2%;
     font-size: 1rem;
     color: var(--main-color);
+    border-radius: 0.5rem;
 }
 
+.other-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17px, auto));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
 
-
+.other-skills .skills-img{
+    background: transparent;
+    width: 4rem;
+    height: 5rem;
+}
+.other-skills .skills-img1{
+    background: transparent;
+    width: 4rem;
+    height: 5rem;
+    border-radius: 20rem;
+    
+}
+.other-skills .skills-img1 img{
+    border-radius: 10%;
+    background: transparent;
+}
+.other-skills .skills-img1:hover{
+    zoom: 130%;
+    border-radius: 2rem;
+    
+}
+.other-skills .skills-img img{
+    border-radius: 50%;
+    background: transparent;
+}
+.other-skills .skills-img:hover{
+    zoom: 130%;
+    border-radius: 2rem;
+    
+}
 /*start Experience */
 .Experience {
     padding: 5rem;
     background: linear-gradient(to top ,rgb(0, 6, 12) , rgb(15, 51, 85));
     background-size: cover;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border-left: 4px solid var(--main-color);
+    
 }
 
 .Experience .Experience-img {
@@ -477,6 +518,7 @@ h2:hover {
     text-align: center;
     margin-left: 22%;
     border: 6px solid var(--main-color);
+    border-radius: 0.5rem;
 
 }
 
@@ -508,7 +550,7 @@ h2:hover {
     margin-left: 15%;
     height: fit-content;
     border-left: 4px solid var(--main-color);
-
+    border-radius: 0.5rem;
 }
 
 
@@ -532,7 +574,7 @@ h2:hover {
     margin-bottom: 2%;
     height: fit-content;
     background: linear-gradient(to right ,rgb(0, 6, 12) , rgb(15, 51, 85));
-    
+    border-radius: 0.5rem;
     padding: 1%;
     border: 6px solid var(--main-color);
 
@@ -620,7 +662,7 @@ h2:hover {
 }
 
 .gallary-container .gallary-img img{
-    border-radius: 0rem;
+    border-radius: 0.5rem;
     height: 20rem;
     border: 5px solid transparent;
     object-fit: fill    ;
@@ -629,12 +671,13 @@ h2:hover {
 .gallary-container .gallary-img1{
     background-size: contain;
     height: 20rem;
+    border-radius: 0.5rem;
    }
 .gallary-container .gallary-img1:hover{
     background-image: url(img/p2.jpg);
 }
 .gallary-container .gallary-img1 img{
-     border-radius: 0;
+    border-radius: 0.5rem;
      border: 5px solid transparent;
      height: 50%;
      object-fit: fill    ;
@@ -654,13 +697,13 @@ h2:hover {
     width: 600px;
     height: 250px;
     margin-left: 26%;
- 
+    border-radius: 0.5rem;
 }
 .wrapper .img{
     position: absolute;
     width: 100%;
     height: 100%;
-    
+    border-radius: 0.5rem;
 }
 .wrapper .img img{
     height: 100%;
@@ -668,6 +711,7 @@ h2:hover {
     object-fit: fill;
     clip-path: circle(0% at 0% 100%);
     transition: all 0.7s;
+    border-radius: 0.5rem;
 }
 .wrapper .img img:hover{
     background-image: url(img/portfoilo/ob11.png);
@@ -749,12 +793,13 @@ h2:hover {
      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
      gap: 0.5rem;
      padding-bottom:6rem ;
+     border-radius: 0.5rem;
      
   }
   .box-c {
     background: linear-gradient(to top ,rgb(0, 6, 12) , rgb(15, 51, 85));
     
-    
+    border-radius: 0.5rem;
     background-size: cover;
     width: 100%;
     height: 13rem;
@@ -767,7 +812,7 @@ h2:hover {
 
    .box-c .price .social{
     margin-left:25%;
-
+    border-radius: 0.5rem;
 
   }
    .box-c p{
@@ -793,6 +838,7 @@ h2:hover {
     background-color: rgb(20, 20, 20);
     margin-top: 2rem;
     text-align: center;
+    border-radius: 0.5rem;
 }
 
 
@@ -802,6 +848,7 @@ h2:hover {
     /* background: rgb(11, 28, 44); */
     background: linear-gradient(to left  rgb(2, 13, 24) , rgb(44, 32, 0));
     background-size: cover;
+    border-radius: 0.5rem;
 
 }
 
@@ -813,7 +860,7 @@ h2:hover {
     /* border: 2px solid lightgrey; */
     margin-left: 17%;
     background-color: transparent;
-
+    border-radius: 0.5rem;
 }
 
 .contacts label {
@@ -821,15 +868,17 @@ h2:hover {
     width: 10rem;
     padding: 5px;
     color: #fff;
-    
+    border-radius: 0.5rem;
 }
 
 .contacts .subject {
     padding: 7px;
+    border-radius: 0.5rem;
 }
 
 .contacts .dropdown {
     padding: 7px;
+    border-radius: 0.5rem;
 }
 
 .contacts select {
@@ -839,21 +888,22 @@ h2:hover {
     background-color: transparent;
     border: 5px solid transparent;
     color: #1b1b1b;
-    background-color: rgb(245, 230, 210);
+    background-color: rgb(238, 203, 158);
+    border-radius: 0.5rem;
 }
 
 .contacts select option {
-    background-color: var(--main-color);
+    background-color: rgb(238, 203, 158);
 }
 
 .contacts .l-input input {
-    background-color: rgb(245, 230, 210);
+    background-color: rgb(238, 203, 158);
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     width: 100%;
     height: 2.5rem;
     padding-left: 20px;
-    border-radius: 1px;
+    border-radius: 0.5rem;
     border: 5px solid transparent;
 }
 
@@ -865,15 +915,17 @@ h2:hover {
     background-color: aqua;
     padding-bottom: 5rem;
     gap: 2rem;
+    border-radius: 0.5rem;
 }
 
 .contacts .subject input {
     width: 100%;
     height: 12rem;
     border: 5px solid transparent;
-    background-color: rgb(245, 230, 210);
+    background-color: rgb(238, 203, 158);
     border-radius: 1px;
     color: rgb(100, 78, 50);
+    border-radius: 0.5rem;  
 }
 
 .contacts .l-input {
