@@ -129,7 +129,7 @@ header {
     display: none;
 }
 .search-box input {
-    width: 5.1rem;
+    width: 8.1rem;
     height: 2rem;
     border: #8a6f4d;
     border-radius: 1rem;
@@ -228,6 +228,7 @@ header {
     text-align: center;
     font-size: 3rem;
     color: var(--main-color);
+    
 }
 
 .heading p {
@@ -262,7 +263,7 @@ header {
     margin-left: 10%;
     padding: 1%;
     width: 80%;
-    height: 40rem;
+    height: fit-content;
     gap: 1rem;
     border-radius: 0.3rem;
     padding-bottom: 2%;
@@ -276,7 +277,7 @@ header {
 
 
 .about .about-container .Education {
-    background: linear-gradient(to left ,rgb(8, 68, 62) , rgb(2, 13, 24));
+    background: linear-gradient(to left ,rgba(8, 68, 62, 0.103) , rgb(2, 13, 24));
     height: 100%;
     overflow: hidden;
     border-radius: 0.5rem;
@@ -573,10 +574,10 @@ h2:hover {
     font-size: 0.8rem;
     margin-bottom: 2%;
     height: fit-content;
-    background: linear-gradient(to right ,rgb(0, 6, 12) , rgb(15, 51, 85));
+    background: linear-gradient(to right ,rgb(0, 6, 12) , rgba(15, 51, 85, 0));
     border-radius: 0.5rem;
     padding: 1%;
-    border: 6px solid var(--main-color);
+    border-left: 6px solid var(--main-color);
 
 
 }
@@ -631,18 +632,7 @@ h2:hover {
 
 
 
-.more{
-    align-items: center;
-    text-align: center;
-    width: 100;
-}
 
-.more h4{
-    font-size: 1.3rem;
-    color: var(--main-color);
-    justify-content: center;
-    padding: 2rem;
-}
 
 /* start of portfolio */
 .porfolio {
@@ -654,36 +644,43 @@ h2:hover {
  
 }
 
-
-.gallary-container {
+.porfolio h2{
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+.porfolio p{
+    color: var(--main-color);
+    font-size: 1rem;
+}
+.porfolio .gallary-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
     color:  rgb(2, 13, 24);
 }
 
-.gallary-container .gallary-img img{
+.porfolio .gallary-container .gallary-img img{
     border-radius: 0.5rem;
     height: 20rem;
     border: 5px solid transparent;
     object-fit: fill    ;
     object-position: center   ;
 }
-.gallary-container .gallary-img1{
+.porfolio .gallary-container .gallary-img1{
     background-size: contain;
     height: 20rem;
     border-radius: 0.5rem;
    }
-.gallary-container .gallary-img1:hover{
+.porfolio .gallary-container .gallary-img1:hover{
     background-image: url(img/p2.jpg);
 }
-.gallary-container .gallary-img1 img{
+.porfolio .gallary-container .gallary-img1 img{
     border-radius: 0.5rem;
      border: 5px solid transparent;
      height: 50%;
      object-fit: fill    ;
      object-position: left   ;
 }
-.gallary-container .gallary-img1 img:hover{
+.porfolio .gallary-container .gallary-img1 img:hover{
      content: url(img/portfoilo/npo6.png) ;
      background-size: cover;
      transition: 1s;
@@ -691,32 +688,47 @@ h2:hover {
      zoom: -10%;
 
 } 
+
+.porfolio .more{
+    align-items: center;
+    text-align: center;
+    width: 100;
+}
+
+.porfolio .more h4{
+    font-size: 1.3rem;
+    color: var(--main-color);
+    justify-content: center;
+    padding: 2rem;
+}
    /* start slide show */
-.wrapper{
+.porfolio .wrapper{
     position: relative;
-    width: 600px;
-    height: 250px;
-    margin-left: 26%;
+    width: 100%;
+    height: 300px;
+   
     border-radius: 0.5rem;
 }
-.wrapper .img{
+
+.porfolio .wrapper .img{
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
+    object-fit: contain;
+    align-items: center;
+    text-align: center;
 }
-.wrapper .img img{
+.porfolio .wrapper .img img{
     height: 100%;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
+    /* object-position: center; */
     clip-path: circle(0% at 0% 100%);
     transition: all 0.7s;
     border-radius: 0.5rem;
 }
-.wrapper .img img:hover{
-    background-image: url(img/portfoilo/ob11.png);
- 
-}
+
   #one:checked ~ .img-1 img{
     clip-path: circle(150% at 0% 100%);
   }
@@ -742,7 +754,7 @@ h2:hover {
   #five:checked ~ .img-5 img{
     clip-path: circle(150% at 0% 100%);
   }
-  .wrapper .sliders{
+  .porfolio .wrapper .sliders{
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -750,7 +762,7 @@ h2:hover {
     z-index: 99;
     display: flex;
   }
-  .wrapper .sliders label{
+  .porfolio .wrapper .sliders label{
     border: 2px solid rgb(3, 61, 119);
     width: 13px;
     height: 13px;
@@ -788,7 +800,7 @@ h2:hover {
 
 
 /* start refference */
- .product-container{
+ .reffence-container{
     display: grid;
      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
      gap: 0.5rem;
@@ -796,27 +808,29 @@ h2:hover {
      border-radius: 0.5rem;
      
   }
-  .box-c {
-    background: linear-gradient(to top ,rgb(0, 6, 12) , rgb(15, 51, 85));
+  .reffence-container .box-c {
+    background: linear-gradient(to right ,rgb(0, 6, 12) , rgba(15, 51, 85, 0));
     
     border-radius: 0.5rem;
     background-size: cover;
     width: 100%;
     height: 13rem;
-    border: 1px solid var(--main-color);
+    border-left: 0px solid var(--main-color);
     border-radius: 0rem;
   }
-  .box-c:hover{
-    background-image: url(img/n4.jpg);
+  .reffence-container .box-c:hover{
+    background: linear-gradient(to bottom   ,rgb(8, 68, 62) , rgb(2, 13, 24));
+    
   }
 
-   .box-c .price .social{
+  .reffence-container .box-c .price .social{
     margin-left:25%;
     border-radius: 0.5rem;
 
   }
-   .box-c p{
-    background-color: var(--main-color);
+  .reffence-container .box-c p{
+    background: linear-gradient(to right ,rgb(255, 249, 249) , rgba(252, 252, 252, 0.822));
+    
     color: rgb(31, 51, 26);;
     font-size: 0.9rem;
     width: 80%;
@@ -829,7 +843,7 @@ h2:hover {
     margin-left: 10%;
    }
 
-   .box-c .price .social img {
+   .reffence-container .box-c .price .social img {
     width: 10%;
     height: 1.5rem;
     color: white;
@@ -846,9 +860,11 @@ h2:hover {
 .contacts {
     width: 100%;
     /* background: rgb(11, 28, 44); */
-    background: linear-gradient(to left  rgb(2, 13, 24) , rgb(44, 32, 0));
+    background: linear-gradient(to left ,rgb(8, 68, 62) , rgb(2, 13, 24));
     background-size: cover;
     border-radius: 0.5rem;
+    /* background-image: url(img/apply33-.png); */
+    background-size: cover;
 
 }
 
@@ -856,11 +872,12 @@ h2:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(170px, auto));
     height: fit-content;
-    width: 70%;
+    width: 100%;
     /* border: 2px solid lightgrey; */
-    margin-left: 17%;
+    /* margin-left: 15%; */
     background-color: transparent;
     border-radius: 0.5rem;
+    
 }
 
 .contacts label {
@@ -897,7 +914,8 @@ h2:hover {
 }
 
 .contacts .l-input input {
-    background-color: rgb(238, 203, 158);
+    background: linear-gradient(to right ,rgb(255, 255, 255) , rgba(212, 157, 75, 0));
+    
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     width: 100%;
@@ -926,6 +944,8 @@ h2:hover {
     border-radius: 1px;
     color: rgb(100, 78, 50);
     border-radius: 0.5rem;  
+    background: linear-gradient(to right ,rgba(213, 217, 221, 0.986) , rgba(212, 157, 75, 0));
+    
 }
 
 .contacts .l-input {
@@ -944,6 +964,25 @@ h2:hover {
     color: wheat;
     gap: 2rem;
 }
+.contacts .contact-img {
+    width: 100%;
+    height: 100%;
+   text-align: left;
+    border-radius: 0.5rem   ;
+    background: linear-gradient(to left ,rgb(8, 68, 62) , rgba(153, 153, 153, 0));
+    
+
+}
+.contacts .contact-img:hover{
+    background: linear-gradient(to left ,rgb(8, 68, 62) , rgba(153, 153, 153, 0.158));
+    
+}
+.contacts .contact-img img{
+    height: 16rem;
+    margin-top: -15%;
+    
+  
+   }
 .contacts .contact-btn{
     padding-top: 2rem;
     text-align: center;
@@ -1101,9 +1140,7 @@ h2:hover {
 
         width: fit-content;
     }
-    .Education{
-        margin-left: -3%;
-    }
+   
  }
 
  @media (max-width: 768px){
@@ -1115,11 +1152,7 @@ h2:hover {
         width: 100%;
         height: 50%;
     }
-    .about-container .Education{
-        display: flex;
-       width: 100%;
-       height: 20rem;
-    }
+   
     .porfolio .gallary{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(5rem, auto));
